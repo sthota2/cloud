@@ -15,7 +15,8 @@ select credential type ,Access key - Programmatic access, which has the below us
 Enables an access key ID and secret access key for the AWS API, CLI, SDK, and other development tools.
 click on next permissions and assign Administrator Group, click next on the tags
 for key provide user_type, and value api, click next and create user, once the user is created Access Key ID & Secret key will be displayed, copy the values to secure location. 
-*Note: Secret key will be displayed once.
+*Note: Secret key will be displayed only once.
+
 
 # Install aws cli
 Based on the OS please install aws cli reference document https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
