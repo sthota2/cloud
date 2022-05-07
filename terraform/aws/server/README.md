@@ -15,4 +15,3 @@ Refer Security group creation from https://registry.terraform.io/providers/hashi
 
 # Terraform Graph
 execute the terraform graph and paste the output in graphvizonline https://dreampuf.github.io/GraphvizOnline/
-
