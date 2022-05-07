@@ -21,7 +21,7 @@ resource "aws_security_group" "my_web_security_group" {
 
 # Create EC2 instance from AMID
 resource "aws_instance" "my_ec2" {
-  ami                    = "ami-0022f774911c1d690"
+  ami                    = "ami-09d56f8956ab235b3"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.my_web_security_group.id]
 

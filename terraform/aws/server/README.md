@@ -3,6 +3,7 @@ Refer provider aws from https://registry.terraform.io/providers/hashicorp/aws/la
 
 # EC2 Instance 
 Refer EC2 instance creation from https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+Image ID used is Ubuntu, Please note that busybox comes out of box in ubuntu
 
 # User data
 Refer user data options from https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#user_data
