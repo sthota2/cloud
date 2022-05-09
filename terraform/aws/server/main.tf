@@ -52,3 +52,42 @@ resource "aws_instance" "my_ec2" {
 
 }
 
+resource "aws_launch_configuration" "my_launch_config" {
+  name            = "web_config"
+  image_id        = "ami-09d56f8956ab235b3"
+  instance_type   = "t2.micro"
+  security_groups = [aws_security_group.my_web_security_group.id]
+  user_data       = <<-EOF
+  #!/bin/bash
+  echo "Hello, World this is Deepni's WebSite" > index.html
+  nohup busybox httpd -f -p ${var.server_port} &
+  EOF
+
+  # Required when using launch configuration with ASG
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
+resource "aws_autoscaling_group" "my_autoscaling_group" {
+  launch_configuration = aws_launch_configuration.my_launch_config.name
+  vpc_zone_identifier  = data.aws_subnet_ids.my_subnet.ids
+  min_size             = 1
+  max_size             = 3
+
+  tag {
+    key                 = "Name"
+    value               = "terraform-asg-example"
+    propagate_at_launch = true
+  }
+
+}
+
+data "aws_vpc" "my_vpc" {
+  default = true
+}
+
+data "aws_subnet_ids" "my_subnet" {
+  vpc_id = data.aws_vpc.my_vpc.id
+
+}

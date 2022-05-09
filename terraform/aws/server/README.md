@@ -22,3 +22,13 @@ terraform type number is used for server port, for more input types refer https:
 
 # Terrform output variable
 get the public ip of the EC2 instance, for more info refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#public_ip
+
+# Launch Configuration
+To Create Launch Configuration, we need the image ID,EC2 instance & life cycle to create before destroy set to true, refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_configuration
+
+# Auto Scaling Group
+To Create Auto Scaling Group refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_group
+
+# Data Source
+To get the data out of the data source, you can use the following syntax
+data.<PROVIDER>_<TYPE>.<NAME>.<ATTRIBUTE>
