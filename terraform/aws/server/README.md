@@ -32,3 +32,18 @@ To Create Auto Scaling Group refer https://registry.terraform.io/providers/hashi
 # Data Source
 To get the data out of the data source, you can use the following syntax
 data.<PROVIDER>_<TYPE>.<NAME>.<ATTRIBUTE>
+
+# Application Load Balancer
+Layer 7 Application load balancer refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb
+
+# Application Listener
+Application Listener refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener
+
+# Application Load Balancer Target Group
+ALB Target group refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group
+
+# Listener Rule
+For more listener rule refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener_rule
+
+# ARN (Amazon Resource Names)
+Refer ARN's document at https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html
