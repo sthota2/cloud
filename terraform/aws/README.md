@@ -1,5 +1,4 @@
-# Getting started with AWS 
-
+# Getting started with AW
 
 # Sign up for account:
 Pre-req's: email id, credit or debit card details.
@@ -28,9 +27,11 @@ execute command aws configure to setup
 verify by aws s3 ls
 view config file location by aws configure list
 
+# AWS Terminlogy 
+Plain english AWS Terminlogy refer https://expeditedsecurity.com/aws-in-plain-english/
 
-
-
+# CDIR Helpful
+Handy Calculator that converts IP Address to CIDR Notation refer https://cidr.xyz/
 
 
 
