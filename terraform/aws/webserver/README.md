@@ -1,49 +1,50 @@
 # Define provider
-Refer provider aws from https://registry.terraform.io/providers/hashicorp/aws/latest/docs#example-usage
+Refer provider aws from [Example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#example-usage)
 
-# EC2 Instance 
-Refer EC2 instance creation from https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+## EC2 Instance 
+Refer EC2 instance creation from [instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
 Image ID used is Ubuntu, Please note that busybox comes out of box in ubuntu
 
-# User data
-Refer user data options from https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#user_data
+## User data
+Refer user data options from [user_data](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#user_data)
 
-# Multiline 
-Refer <<-EOF syntax from https://www.terraform.io/language/configuration-0-11/syntax
+## Multiline 
+Refer <<-EOF syntax from [syntax](https://www.terraform.io/language/configuration-0-11/syntax)
 
-# Security Group
-Refer Security group creation from https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
+## Security Group
+Refer Security group creation from [security group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
 
-# Terraform Graph
-execute the terraform graph and paste the output in graphvizonline https://dreampuf.github.io/GraphvizOnline/
+## Terraform Graph
+execute the terraform graph and paste the output in [graphvizonline] (https://dreampuf.github.io/GraphvizOnline/)
 
-# Terraform input variable
-terraform type number is used for server port, for more input types refer https://www.terraform.io/language/expressions/typeste
+## Terraform input variable
+terraform type number is used for server port, for more input types refer [expressions](https://www.terraform.io/language/expressions/typeste)
 
-# Terrform output variable
-get the public ip of the EC2 instance, for more info refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#public_ip
+## Terrform output variable
+get the public ip of the EC2 instance, for more info refer [output](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#public_ip)
 
-# Launch Configuration
-To Create Launch Configuration, we need the image ID,EC2 instance & life cycle to create before destroy set to true, refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_configuration
+## Launch Configuration
+To Create Launch Configuration, we need the image ID,EC2 instance & life cycle to create before destroy set to true, refer [launch-config](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_configuration)
 
-# Auto Scaling Group
-To Create Auto Scaling Group refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_group
+## Auto Scaling Group
+To Create Auto Scaling Group refer [auto scaling group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_group)
 
-# Data Source
+## Data Source
 To get the data out of the data source, you can use the following syntax
+```
 data.<PROVIDER>_<TYPE>.<NAME>.<ATTRIBUTE>
+```
+## Application Load Balancer
+Layer 7 Application load balancer refer [lb](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb)
 
-# Application Load Balancer
-Layer 7 Application load balancer refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb
+## Application Listener
+Application Listener refer [listener](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener)
 
-# Application Listener
-Application Listener refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener
+## Application Load Balancer Target Group
+ALB Target group refer [lb-target-group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group)
 
-# Application Load Balancer Target Group
-ALB Target group refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group
+## Listener Rule
+For more listener rule refer [rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener_rule)
 
-# Listener Rule
-For more listener rule refer https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener_rule
-
-# ARN (Amazon Resource Names)
-Refer ARN's document at https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html
+## ARN (Amazon Resource Names)
+Refer [ARN's](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)
