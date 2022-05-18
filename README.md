@@ -17,4 +17,5 @@ TYPE:security_group
 NAME:instance (Name of the resource)
 ATTRIBUTE: Name or one of the attributes exported by the resource.
 ```
-
+## Terraform Graph
+execute the terraform graph and paste the output in [graphvizonline](https://dreampuf.github.io/GraphvizOnline/)

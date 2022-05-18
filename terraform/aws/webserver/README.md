@@ -14,9 +14,6 @@ Refer <<-EOF syntax from [syntax](https://www.terraform.io/language/configuratio
 ## Security Group
 Refer Security group creation from [security group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
 
-## Terraform Graph
-execute the terraform graph and paste the output in [graphvizonline] (https://dreampuf.github.io/GraphvizOnline/)
-
 ## Terraform input variable
 terraform type number is used for server port, for more input types refer [expressions](https://www.terraform.io/language/expressions/typeste)
 
