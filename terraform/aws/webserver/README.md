@@ -45,3 +45,6 @@ For more listener rule refer [rule](https://registry.terraform.io/providers/hash
 
 ## ARN (Amazon Resource Names)
 Refer [ARN's](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)
+
+## Layout Diagram
+![WebServer](webserver.jpg)
