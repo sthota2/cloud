@@ -4,3 +4,4 @@ terraform.tfstate
 terraform.tfstate.backup
 .$webserver.drawio.bkp
 .$webserver.drawio.dtmp
+plan

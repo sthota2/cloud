@@ -48,3 +48,13 @@ Refer [ARN's](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespa
 
 ## Layout Diagram
 ![WebServer](webserver.jpg)
+
+## Terraform backend Config
+Terraform backend config is added for the state to stored in S3 & lock in the dynamoDB Table
+Refer [Backend Config](https://www.terraform.io/language/settings/backends/configuration#using-a-backend-block)
+
+### Init Terrform 
+command to initialize terraform 
+```
+terraform init
+```
