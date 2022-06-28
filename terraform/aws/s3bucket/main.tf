@@ -4,6 +4,10 @@ provider "aws" {
 
 resource "aws_s3_bucket" "my_s3_bucket" {
   bucket = "tf-state-bucket-dthota"
+  
+  # To Delete the S3 bucket with Objects
+  
+  force_destroy = true
   # Prevent accidental deletion of the bucket
   lifecycle {
     prevent_destroy = false
