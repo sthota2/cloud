@@ -3,19 +3,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# Define the variables
-variable "server_port" {
-  description = "The port the server will use for HTTP Requests"
-  type        = number
-  default     = 8080
-}
-
-output "alb_dns_name" {
-  value       = aws_alb.my_alb.dns_name
-  description = "The Domain Name of the load balancer"
-
-}
-
 # Define security list
 resource "aws_security_group" "my_web_security_group" {
   name        = "terraform-example"
@@ -151,18 +138,4 @@ resource "aws_alb_listener_rule" "my_alb_listner_rule" {
     target_group_arn = aws_alb_target_group.my_alb_target_group.arn
   }
 
-}
-
-/* Configure the backend config, to use S3 for state & Dynamo DB for Locking */
-terraform {
-  backend "s3"{
-    # Replace this with the bucket name name
-    bucket = "tf-state-bucket-dthota"
-    key= "s3/webserver/terraform.tfstate"
-    region = "us-east-1"
-
-    # Replace this with Dynamo DB Table
-    dynamodb_table = "dynamodb-table-tf-state-lock"
-    encrypt = "true"
-  }
 }
