@@ -4,9 +4,9 @@ provider "aws" {
 
 resource "aws_s3_bucket" "my_s3_bucket" {
   bucket = "tf-state-bucket-dthota"
-  
+
   # To Delete the S3 bucket with Objects
-  
+
   force_destroy = true
   # Prevent accidental deletion of the bucket
   lifecycle {
@@ -36,15 +36,4 @@ resource "aws_dynamodb_table" "my_dynamodb_table" {
     name = "LockID"
     type = "S"
   }
-}
-
-# out puts
-output "s3_bucket_arn" {
-  value = aws_s3_bucket.my_s3_bucket.arn
-  description = "The ARN of the S3 Bucket"
-}
-
-output "dynamodb_table_name" {
-  value = aws_dynamodb_table.my_dynamodb_table.name
-  description = "The Name of the DynamoDB Table"
 }
