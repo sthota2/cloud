@@ -58,3 +58,7 @@ command to initialize terraform
 ```
 terraform init
 ```
+Command to initialize with backend config
+```
+terraform init --backend-config=backend.hcl
+```
